@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+@keyframes animacao-apagar {
+  from {
+    background: #fff;
+  }
+  to{
+    background: #0d6efd;
+  }
+}
+
+@keyframes animacao-background {
+  from {
+    background: #fff;
+  }
+
+  to {
+    rgb(195, 176, 191);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(195, 176, 191);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  animation-name: animacao-background;
+  animation-duration: 5s;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 5px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.btn-tarefa {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.input-tarefa {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-left: 0px;
+  padding-left: 25px;
+}
+ul li {
+  list-style: numbers;
+}
+
+ul li button {
+  display: inline;
+  height: 20%;
+  width: 15%;
+  color: #0d6efd;
+  border-color: #0d6efd;
+  border-radius: 4px;
+  font-size: .875rem;
+  background-color: #fff;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+ul li button:hover {
+ background-color: #0d6efd;
+ color: #fff; 
+ animation-name: animacao-apagar;
+ animation-duration: 0.5s;
+}
+
