@@ -18,7 +18,7 @@
   }
 
   to {
-    rgb(195, 176, 191);
+    background:rgb(151, 134, 148);
   }
 }
 
@@ -30,7 +30,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(195, 176, 191);
+  background: rgb(151, 134, 148);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
